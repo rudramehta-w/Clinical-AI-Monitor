@@ -28,6 +28,6 @@ jobs:
       - name: Execute Autonomous Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          GMAIL_ADDRESS: ${{ secrets.EMAIL_USER }}        # <-- Updated to match Python
+          GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASS }}   # <-- Updated to match Python
         run: uv run src/main_pipeline.py
