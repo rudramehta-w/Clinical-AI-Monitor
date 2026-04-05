@@ -1,0 +1,23 @@
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# Database and Vector Store (Do not push real data to Git)
+data/*.db
+data/*.bin
+
+# Python Cache
+__pycache__/
+*.pyc
+# IDEs and Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
